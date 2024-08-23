@@ -10,7 +10,7 @@ function Navbar() {
 
   useEffect(() => {
     navigate(`/products?search=${searchTerm}`);
-  }, [searchTerm]);
+  }, [searchTerm, navigate]);
 
   return (
     <nav className="bg-gray-800 p-4  w-full top-0 ">
