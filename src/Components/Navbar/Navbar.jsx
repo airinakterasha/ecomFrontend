@@ -29,7 +29,7 @@ function Navbar() {
             type="text"
             onChange={(e) => setSearchTerm(e.target.value)}
             placeholder="Search for products..."
-            className="w-full border-l-0 rounded-l-none px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
+            className="w-full px-4 py-2 rounded-2xl border border-gray-300 focus:outline-none focus:border-blue-500"
           />
         </div>
 
