@@ -18,7 +18,8 @@ function Navbar() {
         {/* Logo/Brand Name */}
         <div className="text-white text-lg font-bold">
           <Link to="/">
-            <img className="w-16 rounded-sm h-10" src={logo} alt="Logo" />
+
+            <h1 className="text-4xl">Ecom</h1>
           </Link>
         </div>
 
