@@ -60,7 +60,7 @@ const Footer = () => {
         <div className="flex items-center justify-between">
         <div className="text-white text-lg font-bold">
           <Link to="/">
-            <h2 className="text-3xl">Ecom</h2>
+            <h2 className="text-3xl text-error">Ecom</h2>
           </Link>
         </div>
 
