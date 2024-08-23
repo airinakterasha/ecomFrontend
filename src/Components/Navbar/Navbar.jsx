@@ -19,7 +19,7 @@ function Navbar() {
         <div className="text-white text-lg font-bold">
           <Link to="/">
 
-            <h1 className="text-4xl">Ecom</h1>
+            <h1 className="text-4xl text-error">Ecom</h1>
           </Link>
         </div>
 
