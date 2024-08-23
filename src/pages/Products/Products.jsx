@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
 import { useLocation } from 'react-router-dom';
@@ -19,7 +19,9 @@ const Products = () => {
   const query = new URLSearchParams(location.search);
   const searchTerm = query.get("search") || '';
   const [productProp, setProductProp] = useState([]);
-  const [loading,setLoading]= useState(false)
+  const [loading,setLoading]= useState(false);
+  console.log(setItemPerPage);
+
   useEffect(() => {
     const fetchProducts = async () => {
       setLoading(true)
@@ -106,7 +108,7 @@ const Products = () => {
   return (
     <div>
       <div>
-        <h2 className='text-3xl text-center font-semibold pb-6 text-green-300'>Our Products</h2>
+        <h2 className='text-3xl text-center pb-6 text-error font-bold'>Products</h2>
       </div>
       <aside className="flex rounded-md border-t">
         <div className={`lg:flex hidden flex-col w-80 xs:w-[70%] px-4 overflow-y-auto bg-white`}>
@@ -114,7 +116,7 @@ const Products = () => {
             <div className="h-[calc(100vh-140px)] px-5 bg-white border-l border-r sm:w-64 w-60">
               <div className="lg:block hidden pr-5">
                 <div className="mb-4">
-                  <h2 className='text-green-400 font-semibold text-2xl text-center my-3'>Filters</h2>
+                  <h2 className='text-error font-bold text-2xl text-center my-3'>Filters</h2>
                   <div className="mb-4">
                     <label className="block text-gray-700">Brand Name</label>
                     <select
@@ -160,7 +162,7 @@ const Products = () => {
                     </div>
                   </div>
                   <div>
-                    <h2 className='text-green-400 font-semibold text-2xl text-center my-3'>Sort by</h2>
+                    <h2 className='text-error font-bold text-2xl text-center my-3'>Sort by</h2>
                     <select
                       value={sortBy}
                       onChange={(e) => setSortBy(e.target.value)}
