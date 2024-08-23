@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { authContex } from "../../Firebase/AuthProvider";
-import logo from "../../assets/1.png"
+
 
 const Login = () => {
   const { SignInWithPassword,googleSignIn } = useContext(authContex);
@@ -44,7 +44,7 @@ const Login = () => {
     <div className="w-full max-w-sm p-6 my-16 m-auto bg-white rounded-lg shadow-md">
       <div className="flex justify-center">
         <Link to="/">
-          <img className="w-24 rounded-lg h-24" src={logo} alt="" />
+          <h2 className="text-3xl">Ecom</h2>
         </Link>
       </div>
 

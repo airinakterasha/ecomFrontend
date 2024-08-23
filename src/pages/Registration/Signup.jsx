@@ -2,9 +2,9 @@ import { updateProfile } from "firebase/auth";
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { authContex } from "../../Firebase/AuthProvider";
-import { FaGoogle } from "react-icons/fa";
+
 import { auth } from "../../Firebase/firebase-config";
-import logo from "../../assets/2.png"
+
 const Signup = () => {
   const { registerWithPassword } = useContext(authContex);
   const navigate = useNavigate();
@@ -41,7 +41,7 @@ const Signup = () => {
     <div className="w-full max-w-sm p-6 my-16 m-auto bg-white rounded-lg shadow-md">
       <div className="flex justify-center">
         <Link to="/">
-          <img className="w-24 rounded-lg h-24" src={logo} alt="" />
+          <h2 className="text-3xl">Ecom</h2>
         </Link>
       </div>
 
@@ -97,7 +97,7 @@ const Signup = () => {
       <p className="mt-8 text-xs font-light text-center text-gray-400">
         Already have an account?{" "}
         <Link to="/login" className="font-medium text-gray-700 hover:underline">
-          Sigin
+          Login
         </Link>
       </p>
     </div>

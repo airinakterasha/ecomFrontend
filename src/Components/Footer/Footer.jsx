@@ -1,6 +1,5 @@
 import { FaReddit, FaFacebookF, FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import logo from "../../assets/logo.png"
 
 const Footer = () => {
   return (
@@ -61,11 +60,7 @@ const Footer = () => {
         <div className="flex items-center justify-between">
         <div className="text-white text-lg font-bold">
           <Link to="/">
-            <img
-              className="w-16 rounded-sm h-10"
-              src={logo}
-              alt="Logo"
-            />
+            <h2 className="text-3xl">Ecom</h2>
           </Link>
         </div>
 

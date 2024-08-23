@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { authContex } from "../../Firebase/AuthProvider";
-import logo from "../../assets/logo.png"
+
 
 function Navbar() {
   const { user, logout } = useContext(authContex);
