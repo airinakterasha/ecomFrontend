@@ -20,6 +20,7 @@ const Login = () => {
     // Call the SignInWithPassword function with email and password
     SignInWithPassword(email, password)
       .then(response => {
+        console.log(response);
         navigate(pathform);
       })
       .catch(error => {
@@ -105,7 +106,7 @@ const Login = () => {
       </div>
 
       <p className="mt-8 text-xs font-light text-center text-gray-400">
-        Don't have an account?{" "}
+        Do not have an account?
         <Link to="/Signup" className="font-medium text-gray-700 hover:underline">
           Create One
         </Link>
