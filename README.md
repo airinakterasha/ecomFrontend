@@ -35,7 +35,7 @@ In building FitLife, I utilized various packages to enhance my development proce
 
 git clone https://github.com/airinakterasha/ecomFrontend
 2. Navigate to the project directory:
-cd fitlife-client
+cd ecomFrontend
 
 3. Install dependencies:
 npm install
